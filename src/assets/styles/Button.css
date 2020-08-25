@@ -1,0 +1,9 @@
+.defaultButton {
+    background-color: #fff;
+    border-radius: 6px;
+    margin: 12px;
+    padding: 12px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}

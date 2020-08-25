@@ -1,7 +1,7 @@
 import React from 'react';
 import SideMenu from '../../components/SideMenu';
+import Header from '../../components/Header';
 import '../../assets/styles/Skeleton.css';
-
 
 class Skeleton extends React.Component {
   render() {
@@ -11,7 +11,9 @@ class Skeleton extends React.Component {
         <SideMenu />
         <div class="contentContainer">
           <Header />
-          {children}
+          <div class="contentArea">
+            {children}
+          </div>
         </div>
       </div>
     );

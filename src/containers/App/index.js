@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Skeleton from '../skeleton';
+import Skeleton from '../Skeleton';
 
 import '../../assets/styles/Shared.css';
 
