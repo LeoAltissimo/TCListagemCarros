@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/LobsterTwo-Regular.otf');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,4 +15,17 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.limitedContainer {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+}
+
+.banner {
+  font-family: 'Lobster Two', cursive;
+  font-size: 100px;
+  text-align: right;
 }
