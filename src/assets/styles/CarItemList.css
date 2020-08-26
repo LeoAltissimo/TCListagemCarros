@@ -5,6 +5,12 @@
     margin-bottom: 12px;
     align-items: center;
     border-bottom: 1px solid #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.carItemContainer:hover {
+    background-color:#ffffff21;
 }
 
 .carItemCotent {

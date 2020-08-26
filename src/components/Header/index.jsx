@@ -5,13 +5,24 @@ import '../../assets/styles/Header.css';
 
 class Header extends React.Component {
   render() {
+    const {
+      sendSearch,
+      handleForm,
+      onCarForm,
+    } = this.props;
+
     return (
-      <div class="headerContainer">
-        <div class="limitedContainer">
+      <div className="headerContainer">
+        <div className="limitedContainer flex">
         <InputField
           placeholder="Pesquise por um veículo"
+          onChange={(e) => sendSearch(e.target.value)}
         />
-        <Button>Cadastrar</Button>
+        <Button
+          onClick={() => handleForm(!onCarForm)}
+        >
+          {onCarForm ? 'Cancelar' : 'Cadastrar'}
+        </Button>
         </div>
       </div>
     );

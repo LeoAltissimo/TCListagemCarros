@@ -5,13 +5,22 @@ import '../../assets/styles/Skeleton.css';
 
 class Skeleton extends React.Component {
   render() {
-    const { children } = this.props;
+    const {
+      children,
+      sendSearch,
+      handleForm,
+      onCarForm,
+    } = this.props;
     return (
-      <div class="mainContainer">
+      <div className="mainContainer">
         <SideMenu />
-        <div class="contentContainer">
-          <Header />
-          <div class="contentArea">
+        <div className="contentContainer">
+          <Header
+            sendSearch={sendSearch}
+            handleForm={handleForm}
+            onCarForm={onCarForm}
+          />
+          <div className="contentArea">
             {children}
           </div>
         </div>

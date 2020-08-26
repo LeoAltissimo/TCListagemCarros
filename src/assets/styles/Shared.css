@@ -1,31 +1,54 @@
 @font-face {
-  font-family: 'Lobster Two';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/LobsterTwo-Regular.otf');
+    font-family: 'Lobster Two';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/LobsterTwo-Regular.otf');
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  background-color:#1f2d40;
-  color:#f5f5f5;
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
+    background-color:#1f2d40;
+    color:#f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .limitedContainer {
-  max-width: 1024px;
-  margin: 0 auto;
-  display: flex;
-  width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
 }
 
 .banner {
-  font-family: 'Lobster Two', cursive;
-  font-size: 100px;
-  text-align: right;
+    font-family: 'Lobster Two', cursive;
+    font-size: 100px;
+    text-align: right;
+}
+
+.error {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 20px;
+    color: red;
+}
+
+.message {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 20px;
+    color: #fff;
 }

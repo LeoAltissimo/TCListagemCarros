@@ -1,16 +1,24 @@
 .mainContainer {
-  display: flex;
+    display: flex;
 }
 
 .contentContainer {
-  width: 100%;
-  background-color: #1f2e40;
+    width: 100%;
+    background-color: #1f2e40;
 }
 
 .contentArea {
-  width: 100%;
-  height: calc(100% - 105px);
-  display: flex;
-  background: url('../img/car-wireframe.png') no-repeat;
-  background-position: center;
+    width: 100%;
+    height: calc(100% - 105px);
+    display: flex;
+    background: url('../img/car-wireframe.png') no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+@media only screen and (max-width: 780px) {
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+    }
 }

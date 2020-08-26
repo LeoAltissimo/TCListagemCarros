@@ -4,18 +4,22 @@ import '../../assets/styles/CarList.css'
 
 class CartList extends React.Component {
   renderCartList() {
-    const { list } = this.props;
+    const { list, editCar } = this.props;
 
     if (!list || list?.lenght === 0) return null;
 
     return list.map((car) => (
-      <CarItemList key={car.id} carData={car} />
+      <CarItemList 
+        key={car.id}
+        carData={car}
+        editCar={() => editCar(car)}
+      />
     ));
   }
 
   render() {
     return (
-      <div class="carListContainer">
+      <div className="carListContainer">
         {this.renderCartList()}
       </div>
     );

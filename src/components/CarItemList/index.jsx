@@ -6,30 +6,30 @@ import '../../assets/styles/CarItemList.css';
 
 class CarItemList extends React.Component {
   render() {
-    const { carData } = this.props;
+    const { carData, editCar } = this.props;
 
     return (
-      <div class="carItemContainer limitedContainer">
-        <div class="carItemCotent">
-          <div class="cartItemRow">
-            <p class="cartitle">{carData.title}</p>
-            <p class="carText">
+      <div className="carItemContainer limitedContainer" onClick={editCar}>
+        <div className="carItemCotent">
+          <div className="cartItemRow">
+            <p className="cartitle">{carData.title || ''}</p>
+            <p className="carText">
               <Currency
-                quantity={carData.price}
+                quantity={carData.price || ''}
                 currency="BRL"
                 symbol="R$"
               />
             </p>
           </div>
-          <div class="cartItemRow">
-            <p class="carText">
-              {`${carData.model} - ${carData.brand} - ${carData.km}Km`}
+          <div className="cartItemRow">
+            <p className="carText">
+              {`${carData.model || ''} - ${carData.brand || ''} - ${carData.km  || ''}Km`}
             </p>
-            <p class="carText">Celta4</p>
+            <p className="carText">{carData.year || ''}</p>
           </div>
 
         </div>
-        <Button>
+        <Button onClick={editCar}>
           Editar
         </Button>
       </div>
